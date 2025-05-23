@@ -1,0 +1,22 @@
+.glowWrapper {
+  border-radius: 9999px; /* full in Chakra */
+  border: 2px solid #97DFFC;
+  padding: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulseGlow 3.5s ease-in-out infinite;
+  box-shadow: 0 0 0px #97DFFC;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0x #97DFFC;
+  }
+  50% {
+    box-shadow: 0 0 40px #97DFFC;
+  }
+  100% {
+    box-shadow: 0 0 0px #97DFFC;
+  }
+}

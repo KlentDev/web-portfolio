@@ -1,0 +1,23 @@
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 0px #97DFFC;
+  }
+  50% {
+    text-shadow: 0 0 12px #97DFFC;
+  }
+  100% {
+    text-shadow: 0 0 0px #97DFFC;
+  }
+}
+
+.verticalText {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: black;
+  -webkit-text-stroke: 1px #97DFFC;
+  animation: pulseGlow 3.5s ease-in-out infinite;
+  text-align: center;
+  letter-spacing: 0.1em;
+}

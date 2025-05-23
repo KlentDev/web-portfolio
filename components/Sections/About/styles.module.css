@@ -1,0 +1,33 @@
+/* Pulse glow effect */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0.5em rgba(151, 223, 252, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 1em rgba(151, 223, 252, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 0.5em rgba(151, 223, 252, 0.5);
+  }
+}
+
+/* Custom scrollbar styles for the TabList */
+.skillModal::-webkit-scrollbar {
+  height: 0.4em;
+}
+.skillModal::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+.skillModal::-webkit-scrollbar-thumb {
+  background: var(--chakra-colors-gray-500);
+  border-radius: 1em;
+  transition: background 0.3s ease;
+}
+.skillModal::-webkit-scrollbar-thumb:hover {
+  background: var(--chakra-colors-gray-400);
+}
+
+.skillModal {
+  scrollbar-width: thin;
+  scrollbar-color: var(--chakra-colors-gray-500) transparent;
+}

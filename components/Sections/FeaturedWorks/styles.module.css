@@ -1,0 +1,16 @@
+.featureCard {
+  position: relative;
+  overflow: visible;
+  border-radius: 1em;
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  z-index: 2;
+}
+
+.featureCard:hover {
+  box-shadow: 0 0 24px #6ec1e4, 0 0 36px #6ec1e4;
+  transform: translateY(-4px);
+}
+
+.featureCard img {
+  transition: transform 0.3s ease-in-out;
+}
