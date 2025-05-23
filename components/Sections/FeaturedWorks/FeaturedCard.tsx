@@ -62,14 +62,14 @@ const ProjectDescription = ({
   isLeft: boolean
 }) => (
   <Container
-    paddingX={5}
-    paddingY={1}
+    px={5}
+    py={4}
     display="flex"
     alignItems="center"
     justifyContent="space-around"
     flexDirection="column"
   >
-    <Stack spacing={1} width="100%">
+    <Stack spacing={2} width="100%">
       <Text
         fontSize={{ base: 'md', md: 'large', '2xl': 'xx-large' }}
         fontWeight="bold"
@@ -79,29 +79,31 @@ const ProjectDescription = ({
         textTransform="uppercase"
         as="span"
       >
-        <Text variant="accentAlternative" fontSize="md" as="span">
+        <Text variant="accentAlternative" fontSize="md" as="span" mr={1}>
           #0{idx}
-          {'  '}
         </Text>
         {title}
       </Text>
+
       <Divider
         borderColor="#A6A6A6"
         width="90%"
-        marginLeft={0}
         alignSelf={isLeft ? 'flex-end' : 'flex-start'}
+        mb={2} // Add margin bottom to separate from description
       />
+
+      <Text
+        fontSize="sm"
+        variant="accentAlternative"
+        width="90%"
+        alignSelf={isLeft ? 'flex-end' : 'flex-start'}
+        wordBreak="break-word"
+        lineHeight="1.6"
+        mt={1}
+      >
+        {description}
+      </Text>
     </Stack>
-    <Text
-      fontSize="smaller"
-      variant="accentAlternative"
-      width="90%"
-      alignSelf={isLeft ? 'flex-end' : 'flex-start'}
-      wordBreak="break-word"
-      paddingY={{ base: 3, md: 0 }}
-    >
-      {description}
-    </Text>
   </Container>
 )
 
