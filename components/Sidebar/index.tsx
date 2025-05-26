@@ -123,28 +123,58 @@ const Sidebar = () => {
             🧪 Creative Technologist
           </MotionHeading>
 
-          <MotionButton
-            size="lg"
-            variant="outline"
-            borderRadius="md"
-            borderWidth="1px"
-            fontWeight="semibold"
-            fontSize="sm"
-            width="140px"
-            colorScheme="blue"
-            href="mailto:klentmickobering@gmail.com"
-            target="_blank"
-            as="a"
-            whileHover={{
-              scale: 1.05,
-              boxShadow: `0 0 12px ${glowColor}, 0 0 24px ${glowColor}`,
-            }}
-            whileTap={{ scale: 0.97 }}
-            transition={{ type: 'spring', stiffness: 300 }}
+          {/* Updated Button Section */}
+          <MotionBox
+            display="flex"
+            gap={4}
+            flexWrap="wrap"
             variants={simpleOpacity}
           >
-            Get in touch
-          </MotionButton>
+            <MotionButton
+              size="lg"
+              variant="outline"
+              borderRadius="md"
+              borderWidth="1px"
+              fontWeight="semibold"
+              fontSize="sm"
+              width="140px"
+              colorScheme="blue"
+              href="mailto:klentmickobering@gmail.com"
+              target="_blank"
+              as="a"
+              whileHover={{
+                scale: 1.05,
+                boxShadow: `0 0 12px ${glowColor}, 0 0 24px ${glowColor}`,
+              }}
+              whileTap={{ scale: 0.97 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+            >
+              Get in touch
+            </MotionButton>
+
+            <MotionButton
+              size="lg"
+              variant="solid"
+              borderRadius="md"
+              fontWeight="semibold"
+              fontSize="sm"
+              width="140px"
+              colorScheme="gray"
+              bg={useColorModeValue('gray.800', 'blue.200')}
+              color={useColorModeValue('white', 'gray.800')}
+              href="https://drive.google.com/file/d/1zu5Fp3lo7RU-YAtF5yUEqizRtRJzQc2R/view?usp=drive_link"
+              target="_blank"
+              as="a"
+              whileHover={{
+                scale: 1.05,
+                boxShadow: `0 0 12px ${glowColor}, 0 0 24px ${glowColor}`,
+              }}
+              whileTap={{ scale: 0.97 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+            >
+              See my CV
+            </MotionButton>
+          </MotionBox>
 
           <MotionBox display="flex" gap={4} pt={4} variants={simpleOpacity}>
             {SocialMedias.map((socMedia) => (
