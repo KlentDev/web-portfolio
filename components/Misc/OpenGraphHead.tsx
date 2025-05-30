@@ -1,7 +1,7 @@
 import Head from 'next/head'
 const OpenGraphHead = () => (
   <Head>
-    <title>Klent Micko | Creative Technologist</title>
+    <title>Klent Micko | Creative Developer</title>
     <meta name="description" content="My personal solace place on web-earth." />
     <meta property="og:title" content="Klent Micko | Creative Developer" />
     <meta property="og:site_name" content="Klent Micko Bering" />
