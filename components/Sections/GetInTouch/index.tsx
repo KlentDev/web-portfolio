@@ -102,7 +102,7 @@ const GetInTouch = () => {
           <Text>
             <Icon as={RiGithubFill} h={6} w={6} /> <br />
             Designed and built with ❤️ <br />
-            Klent Micko Bering, CT <Icon as={RiCopyleftLine} /> 2025
+            Klent Micko Bering, CD <Icon as={RiCopyleftLine} /> 2025
           </Text>
         </Link>
       </Box>

@@ -120,7 +120,7 @@ const Sidebar = () => {
             className={styles.marginTopSmall}
             variants={fadeInUp}
           >
-            🧪 Creative Technologist
+            🧪 Creative Developer
           </MotionHeading>
 
           {/* Updated Button Section */}
