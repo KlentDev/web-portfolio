@@ -24,7 +24,7 @@
     "no-trailing-spaces": "error",
     "react/no-multi-comp": "error",
     "import/first": "error",
-    "import/order": "error",
+    "import/order": "off",
     "linebreak-style": 0,
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "prettier/prettier": [

@@ -6,8 +6,8 @@ import {
 } from '@chakra-ui/react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect } from 'react'
+import styles from './styles.module.css'
 import { avatarAnimation } from 'config/animations'
-import styles from './styles.module.css' // adjust path if needed
 
 const AvatarImages = {
   DarkMode: '/profile.png',
