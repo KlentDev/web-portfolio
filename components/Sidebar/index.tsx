@@ -120,7 +120,7 @@ const Sidebar = () => {
             className={styles.marginTopSmall}
             variants={fadeInUp}
           >
-            🧪 Creative Developer
+            PROGRAMMER / DESIGNER
           </MotionHeading>
 
           {/* Updated Button Section */}
@@ -162,7 +162,7 @@ const Sidebar = () => {
               colorScheme="gray"
               bg={useColorModeValue('gray.800', 'blue.200')}
               color={useColorModeValue('white', 'gray.800')}
-              href="https://drive.google.com/file/d/1zu5Fp3lo7RU-YAtF5yUEqizRtRJzQc2R/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1zu5Fp3lo7RU-YAtF5yUEqizRtRJzQc2R/view?usp=sharing"
               target="_blank"
               as="a"
               whileHover={{

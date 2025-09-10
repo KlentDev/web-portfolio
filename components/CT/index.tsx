@@ -26,7 +26,7 @@ const Creative = () => {
       >
         {/* Glow wrapper for text */}
         <Box className={styles.glowWrapper}>
-          <Text className={styles.verticalText}>CREATIVE DEVELOPER</Text>
+          <Text className={styles.verticalText}>PROGRAMMER / DESIGNER</Text>
         </Box>
       </MotionBox>
     </AnimatePresence>
